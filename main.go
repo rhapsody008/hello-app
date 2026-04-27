@@ -23,7 +23,7 @@ func healthz(w http.ResponseWriter, r *http.Request) {
  
 func main() {
 	mux := http.NewServeMux()
-	mux.HandleFunc("/", handler)
+	mux.HandleFunc("/hello", handler)
 	mux.HandleFunc("/healthz", healthz)
  
 	addr := ":8080"
