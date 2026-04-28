@@ -14,7 +14,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	if clusterName == "" {
 		clusterName = "unknown"
 	}
-	fmt.Fprintf(w, "Hello from %s!\n", clusterName)
+	fmt.Fprintf(w, "Hello from %s!\n VERSION 2\n", clusterName)
 }
  
 func healthz(w http.ResponseWriter, r *http.Request) {
